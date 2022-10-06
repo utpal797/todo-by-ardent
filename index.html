@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make your to do list!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="navbar">
+            <img src="images1/download.png" alt="" class="logo">
+            <ul id="list">
+              <li><a href="files/home.html">Home</a></li>
+              <li><a href="files/feature.html">Feature</a></li>
+              <li><a href="files/internship.html">Internship</a></li>
+              <li><a href="files/contact.html">Contact</a></li>
+              <li><a href="files/feedback.html">Feedback</a></li>
+              <li><a href="files/about.html">About Us</a></li>
+            </ul>
+         </div>
+    </div>
+         <section id="banner">
+            <div class="banner-text">
+                <h1>ARDENT</h1>
+                <h5>Make your Todo list!</h5>
+                <button type="button" value="Click me" onclick="msg()">START</button>
+            </div>
+        </section>
+    <section id="about">
+        <h1 class="title">ARDENT</h1>
+        <div class="row">
+            <div class="col-left">
+                <div class="headline">
+                    <img src="C:\Users\utpal\Desktop\my website\About.png" alt="">
+                </div>
+            </div>
+        <script>
+            var display = document.getElementById("sidemenu");
+            var hidden = document.getElementById("closemenu");
+            var list = document.getElementById("list");
+            display.onclick = function(){
+
+                list.style.visibility ="visible";
+                list.style.right = "0%";
+            }
+            hidden.onclick = function(){
+
+                list.style.right = "-60%";
+            }
+            function msg() {
+                alert("Welcome to our website") ;
+              }
+        </script>
+
+
+
+
+</body>
+</html>
